@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>STL Lighting Group &#124; Product Videos</title>
+	<meta charset="utf-8">
+	<meta name="description" content="A convenient LED lighting video collection, featuring popular LED fixtures from our represented North American lighting manufacturers.">
+	<meta name="format-detection" content="telephone=no">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="menu-style.css" rel="stylesheet" type="text/css">
+	<link href="movie-popup.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+	<script src="scripts/openfile.js" type="text/javascript"></script>
+	<script src="scripts/setActiveMenu.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="scripts/movie-popup.js"></script>
+	<script src="scripts/side-slideshow.js"></script>
+</head>
+<body>
+	<div class="popup-bg" style="display:none">
+	</div>
+	<div class="overflow-control">
+		<div id="header-bg">
+			<div class="content">
+				<!--writes in the header from STL-menu.html-->
+				<script type="text/javascript">writeFile("global_html/header.html")</script>
+			</div>
+		</div>
+		
+		<div class="content-wide menu-band">
+			<div class="content menu">
+				<!--writes in the menu from STL-menu.html-->
+				<script type="text/javascript">writeFile("global_html/STL-menu.html")</script>
+				<!--makes a button active-->
+				<script type="text/javascript">setActive('product-videos', 'menu-active')</script>
+			</div>
+		</div>
+	
+		<div class="content-wide">	
+			<div class="content main-min-height">
+				<!-- Side slideshow section -->
+				<div class="side-bg right top hide"><img src="images/empty.png" alt="slideshow"></div>
+				<div class="side-bg right bottom"><img src="images/empty.png" alt="RHS panel image"></div>
+				
+				<div class="side-bg left top hide"><img src="images/empty.png" alt="slideshow"></div>
+				<div class="side-bg left bottom"><img src="images/empty.png" alt="LHS panel image"></div>
+				
+				<div id="slideshow" style="display: none">
+					<script type="text/javascript">
+						writeFile("global_html/slideshow-images.html");
+						startSideSlider();
+					</script>
+				</div>
+				<!-- End Side slideshow section -->
+				
+				<div class="page-heading">
+					<h1>Product Videos</h1>
+				</div>
+				<div class="video-list">	
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/14ZHhtOWN3U')">
+						<img src="images/videos/GE-TetraContour.jpg" alt="GE Tetra Contour thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">GE Tetra Contour</div>
+						</div>
+					</div>
+					
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/eU0mzdgBydk')">
+						<img src="images/videos/GE-EvolveGarage.jpg" alt="GE Evolve Garage thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">GE Evolve Garage</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/Kxe-9_p9ato')">
+						<img src="images/videos/MoltoLuce-fixtures.jpg" alt="Molto Luce Fixtures thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Molto Luce Fixtures</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/jQr3jg4XJ4o')">
+						<img src="images/videos/Bruck-400Pendants.jpg" alt="Bruck 400 lm Pendants thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Bruck 400 lm Pendants</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/Z_rLxMgGLUc')">
+						<img src="images/videos/AlvaTex-exterior.jpg" alt="Alva Tex Exterior thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Alva Tex Exterior</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/3giZBo6GpmU')">
+						<img src="images/videos/Aurora-mPro.jpg" alt="Aurora mPro Downlight thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Aurora mPro Downlight</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/zVshqVQHCgc')">
+						<img src="images/videos/Dreamscape-VerticalL.jpg" alt="XDreamscape Vertical L LED thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">XDreamscape Vertical L LED</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/qOtaZETqDBQ')">
+						<img src="images/videos/GM-NewProducts2017.jpg" alt="GM New Products 2017 thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">GM New Products 2017</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/d008mw_Z_0o')">
+						<img src="images/videos/LEDS-C4-Euroluce1027.jpg" alt="LEDS-C4 Euroluce 2017 thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">LEDS-C4 Euroluce 2017</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/9c3yP-XbwHs')">
+						<img src="images/videos/Tempo-C7R05.jpg" alt="Tempo C7R05 Wall Wash LED thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Tempo C7R05 Wall Wash LED</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/copndyNCgwE')">
+						<img src="images/videos/Tempo-C6.jpg" alt="Tempo C6 LED Linear thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Tempo C6 LED Linear</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/O8q1GRUy9-Q')">
+						<img src="images/videos/USArch-Razar.jpg" alt="US Architectural Razar thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">US Architectural Razar</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://youtube.com/embed/56KU0m4i8PU')">
+						<img src="images/videos/albeo-abr1-video.jpg" alt="Albeo ABR1 thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Albeo ABR1</div>
+						</div>
+					</div>
+				
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://player.vimeo.com/video/125634073?title=0&byline=0&portrait=0')">
+						<img src="images/videos/alva-slim-video.jpg" alt="Alva Slim thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Alva Slim</div>
+						</div>
+					</div>
+					
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://player.vimeo.com/video/125634072')">
+						<img src="images/videos/alva-ilia-video.jpg" alt="Alva Ilia thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Alva Ilia</div>
+						</div>
+					</div>
+				
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://youtube.com/embed/hCu4IBtIQew')">
+						<img src="images/videos/bruck-flighttrack-video.jpg" alt="Bruck Flight Track thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Bruck Flight Track</div>
+						</div>
+					</div>
+				
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://youtube.com/embed/MYfE7pl7jyA')">
+						<img src="images/videos/dreamscape-5600-video.jpg" alt="Dreamscape 5600 LED thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Dreamscape 5600 LED</div>
+						</div>
+					</div>
+				
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/RYYljecSzps')">
+						<img src="images/videos/ge-evolve-video.jpg" alt="GE Evolve LED thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">GE Evolve LED</div>
+						</div>
+					</div>
+				
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/5mLv8MOn12c')">
+						<img src="images/videos/metalumen-bim-video.jpg" alt="Metalumen BIM System thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Metalumen BIM System</div>
+						</div>
+					</div>
+				
+					<div class="video_thumb" onclick="clickAddSrc(this, 'https://www.youtube.com/embed/1fDOw_YeRb0')">
+						<img src="images/videos/modernforms-new2015-video.jpg" alt="Modern Forms Products thumb">
+						<div class="showPopup">
+							<div class="video_play">
+								<img src="images/videos/play-video.png" alt="play button">
+							</div>
+							<div class="popup" style="display:none">
+								<iframe class="player" allowfullscreen>
+								</iframe>
+							</div>
+							<div class="video_title">Modern Forms Products</div>
+						</div>
+					</div>
+				
+					<!-- Spacers if needed
+					<div class="video_thumb" style="border:1px solid #fff"></div>
+					<div class="video_thumb" style="border:1px solid #fff"></div>-->
+					
+				</div>
+			</div>
+			<div style="border-top: 1px solid #109343; margin: 20px 0 12px 0;">
+			</div>
+			<div id="footer-bg">
+				<div class="content">
+					<div style="border: 1px solid #fff;">
+					<script type="text/javascript">writeFile("global_html/brand-table.html")</script>
+					</div>
+				</div>
+			
+				<div class="content">
+					<div id="contact-info">
+						Tel: 519.620.9135 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toll Free: 1.888.712.9901
+					</div>
+					<div id="social-media">
+						<a href="http://www.linkedin.com/company/stl-lighting-group?trk=top_nav_home" target="_blank" title="Linked in"><img src="images/linked_in.png" alt="Linked In link"></a>
+						<a href="https://www.facebook.com/pages/STL-Lighting-Group/483965178294050" target="_blank" title="Facebook"><img src="images/facebook.png" alt="Facebook link"></a>
+						<a href="http://www.oaa.on.ca/" target="_blank" title="Ontario Association of Architects"><img src="images/oaa.jpg" alt="OAA link"></a>
+						<a href="http://www.edisonreport.net/" target="_blank" title="Edison Report"><img src="images/edison_report.png" alt="Edison link"></a>
+						<a href="http://www.iesna.org/" target="_blank" title="Illuminating Engineering Society"><img src="images/ies.png" alt="IES link"></a>
+						<a href="https://www.iald.org/" target="_blank" title="International Association of Lighting Designers"><img src="images/iald-logo-white.png" alt="IAOLD link"></a>
+						<a href="http://energy.gov/eere/ssl/why-ssl" target="_blank" title="US Department of Energy"><img src="images/us_doe.png" alt="US DoE link"></a>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+			</div>
+			<div style="border-top: 1px solid #109343; margin: 12px 0 30px 0;">
+			</div>
+		</div>
+	</div>
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=9144760; 
+	var sc_invisible=1; 
+	var sc_security="f2b71a03"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="web analytics"
+	href="http://statcounter.com/" target="_blank"><img
+	class="statcounter"
+	src="//c.statcounter.com/9144760/0/f2b71a03/1/" alt="web
+	analytics"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

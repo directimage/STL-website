@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>STL Lighting Group &#124; Photo Gallery</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Inspirational snapshots of lighting installations showcasing LED fixtures from our represented North American lighting manufacturers.">
+	<meta name="format-detection" content="telephone=no">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="gallery-highslide/highslide/highslide.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="menu-style.css" rel="stylesheet" type="text/css">
+	<script src="scripts/openfile.js" type="text/javascript"></script>
+	<script src="scripts/setActiveMenu.js" type="text/javascript"></script>
+	<script src="gallery-highslide/highslide/highslide-with-gallery.js" type="text/javascript"></script>
+	<script src="gallery-highslide/highslide/highslide.config.js" charset="utf-8" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="scripts/side-slideshow.js"></script>
+</head>
+<body>
+	<script type="text/javascript">writeFile("galleries-html/zthumbs-preLoad.html")</script>
+	<div id="overlay0" onclick="closePopup()">
+	</div>
+	<div class="overflow-control">
+		<div id="header-bg">
+			<div class="content">
+				<!--writes in the header from STL-menu.html-->
+				<script type="text/javascript">writeFile("global_html/header.html")</script>
+			</div>
+		</div>
+		
+		<div class="content-wide menu-band">
+			<div class="content menu">
+				<!--writes in the menu from STL-menu.html-->
+				<script type="text/javascript">writeFile("global_html/STL-menu.html")</script>
+				<!--makes a button active-->
+				<script type="text/javascript">setActive('photo-gallery','menu-active')</script>
+			</div>
+		</div>
+	
+		<div class="content-wide">
+			<div class="content">
+				<!-- Side slideshow section -->
+				<div class="side-bg right top hide"><img src="images/empty.png" alt="slideshow"></div>
+				<div class="side-bg right bottom"><img src="images/empty.png" alt="RHS panel image"></div>
+				
+				<div class="side-bg left top hide"><img src="images/empty.png" alt="slideshow"></div>
+				<div class="side-bg left bottom"><img src="images/empty.png" alt="LHS panel image"></div>
+				
+				<div id="slideshow" style="display: none">
+					<script type="text/javascript">
+						writeFile("global_html/slideshow-images.html");
+						startSideSlider();
+					</script>
+				</div>
+				<!-- End Side slideshow section -->
+				
+				<div class="page-heading">
+					<h1>Photo Gallery</h1>
+				</div>
+				<div id="gallery-menu">
+					<!--writes in the menu from gallery-menu.html-->
+					<script type="text/javascript">writeFile("global_html/gallery-menu.html")</script>
+					<!--makes a gallery button active-->
+					<script type="text/javascript">setActiveGallery('commercial')</script>
+				</div>
+				<div style="clear: both">
+				</div>
+				
+				<div id="galleries">
+					<script type="text/javascript">writeFile("galleries-html/commercial-gallery.html")</script>
+					<script type="text/javascript">document.getElementById("commercial").onclick();</script>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			
+			<div style="border-top: 1px solid #109343; margin: 20px 0 12px 0;">
+			</div>
+			<div id="footer-bg">
+				<div class="content">
+					<div style="border: 1px solid #fff;">
+					<script type="text/javascript">writeFile("global_html/brand-table.html")</script>
+					</div>
+				</div>
+			
+				<div class="content">
+					<div id="contact-info">
+						Tel: 519.620.9135 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toll Free: 1.888.712.9901
+					</div>
+					<div id="social-media">
+						<a href="http://www.linkedin.com/company/stl-lighting-group?trk=top_nav_home" target="_blank" title="Linked in"><img src="images/linked_in.png" alt="Linked In link"></a>
+						<a href="https://www.facebook.com/pages/STL-Lighting-Group/483965178294050" target="_blank" title="Facebook"><img src="images/facebook.png" alt="Facebook link"></a>
+						<a href="http://www.oaa.on.ca/" target="_blank" title="Ontario Association of Architects"><img src="images/oaa.jpg" alt="OAA link"></a>
+						<a href="http://www.edisonreport.net/" target="_blank" title="Edison Report"><img src="images/edison_report.png" alt="Edison link"></a>
+						<a href="http://www.iesna.org/" target="_blank" title="Illuminating Engineering Society"><img src="images/ies.png" alt="IES link"></a>
+						<a href="https://www.iald.org/" target="_blank" title="International Association of Lighting Designers"><img src="images/iald-logo-white.png" alt="IAOLD link"></a>
+						<a href="http://energy.gov/eere/ssl/why-ssl" target="_blank" title="US Department of Energy"><img src="images/us_doe.png" alt="US DoE link"></a>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+			</div>
+			<div style="border-top: 1px solid #109343; margin: 12px 0 30px 0;">
+			</div>
+		</div>
+	</div>
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=9144760; 
+	var sc_invisible=1; 
+	var sc_security="f2b71a03"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="web analytics"
+	href="http://statcounter.com/" target="_blank"><img
+	class="statcounter"
+	src="//c.statcounter.com/9144760/0/f2b71a03/1/" alt="web
+	analytics"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

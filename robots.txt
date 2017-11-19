@@ -1,0 +1,25 @@
+User-Agent: *
+
+Disallow: /global_html
+Disallow: /galleries-html
+Disallow: /images/contact
+Disallow: /images/line_card
+Disallow: /images/on-site-news
+Disallow: /images/quick-ship
+Disallow: /images/services
+Disallow: /images/side_panels
+Disallow: /NewLayout1.html
+Disallow: /NewLayout2.html
+Disallow: /2018
+
+
+Allow: /index.html
+Allow: /inx1-line-card.html
+Allow: /inx2-product-videos.html
+Allow: /inx3-photo-gallery.html
+Allow: /inx4-new-products.html
+Allow: /inx5-quick-ship.html
+Allow: /inx6-contact.html
+Allow: /newsletter-list.html
+
+Sitemap: http://www.stllighting.com/sitemap.xml/

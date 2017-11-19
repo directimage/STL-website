@@ -1,0 +1,201 @@
+@font-face {
+	font-family: STLGothic;
+    src: url('fonts/gothic.eot');
+    src: url('fonts/gothic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gothic.woff2') format('woff2'),
+         url('fonts/gothic.woff') format('woff'),
+         url('fonts/gothic.ttf') format('truetype'),
+         url('fonts/gothic.svg#STLGothic') format('svg');
+}
+
+@font-face {
+	font-family:'STLverdana';
+	src: url('fonts/Vverdana.eot');
+	src: url('fonts/Vverdana.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Vverdana.woff') format('woff'),
+		 url('fonts/Vverdana.ttf') format('truetype'),
+		 url('fonts/Vverdana.svg#STLverdana') format('svg');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body, html {
+    height: 100%;
+	width: 100%;
+}
+
+body {
+    font-size: 15px;
+	line-height: 20px;
+    font-family: Verdana, STLverdana, Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+p {
+    display: block;
+    margin: 0 0 0 0;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: STLGothic, 'Century Gothic', Arial, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 32px;
+	margin-left: -.1em;
+}
+
+h2 {
+	font-size: 26px;
+	line-height: 26px;
+}
+
+h3 {
+	display: block;
+	float: right;
+	margin-top: 51px;
+	margin-right: -4px;
+	font-size: 34px;
+	letter-spacing: .09em;
+	word-spacing: 5px;
+	color: #109343;
+}
+h3 span {
+	letter-spacing: -.025em
+}
+h4 {
+	font-size: 35px;
+	line-height: normal;
+	word-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+    text-decoration: none;
+	color: red;
+}
+
+.overflow-control{
+	display: block;
+	width: 100%;
+	min-width: 962px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+
+.content{
+	display: block;
+	width: 936px;
+	margin: 0 auto;
+}
+
+.content-wide{
+	width: 1860px;
+	position: relative;
+	left: 50%;
+	margin-left: -930px;
+}
+
+.main-min-height {
+	min-height: 636px;
+}
+
+.page-heading {
+	position: relative;
+	display: block;
+	padding-top: 14px;
+}
+.page-heading span { 
+	color: #88C9A1;
+}
+
+
+/* LINE CARD
+=================================================================================================== */
+
+
+#logo-matrix {
+	position:relative;
+	display: block;
+	margin-top: 24px;
+	width: 1020px;
+	border: 6px solid #000;
+	border-right: 7px solid #000;
+}
+#logo-matrix table{
+	border-collapse: collapse;
+	position: relative;
+	width: 100%;
+}
+#logo-matrix td{
+	height: 81px;
+	text-align: center;
+	line-height: 0;
+	border: 2px solid #e0e0df;
+	padding: 0px;
+}
+#logo-matrix img {
+	max-height: 60px;
+	max-width: 142px;
+}
+.list-logos{
+	position: relative;
+	display: inline-block;
+	float: left;
+	line-height: 57px;
+	height: 60px;
+	width: 186px;
+	text-align: center;
+	border-bottom: 2px solid #e0e0df;
+	border-left: 2px solid #e0e0df;
+}
+.list-logos img {
+	max-height: 46px;
+	max-width: 156px;
+	vertical-align: middle;
+}
+.make-larger {
+	max-height: 50px;
+	max-width: 156px;
+}
+
+.list-text1 {
+	position: relative;
+	display: inline-block;
+	color: #808285;
+	letter-spacing: 0.02em;
+	font-size: 14px;
+	float: left;
+	padding-right: 20px;
+	padding-top: 20px;
+	height: 40px;
+	width: 704px;
+	padding-left: 20px;
+	border-bottom: 2px solid #e0e0df;
+	border-left: 2px solid #e0e0df;
+	border-right: 2px solid #e0e0df;
+}
+.list-text2 {
+	line-height: 20px;
+	padding-top: 10px;
+	height: 50px;
+}
+
+
+
+

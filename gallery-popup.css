@@ -1,0 +1,38 @@
+
+.closedBox {
+	overflow: hidden;
+	position: absolute;
+	opacity: 0;
+	height: 0px; 
+	width: 0px; 
+	transition: width .6s , height .6s , opacity .6s;
+}
+.openedBox {
+	position: absolute;
+	margin: 0 auto !important;
+	left: 0;
+	right: 0;
+	top: 0;
+	//bottom: 0;
+	z-index:3;
+	border: 4px solid black;
+	opacity: 1;
+	transition: width .3s 1s, height .3s .5s, opacity .6s .8s ;
+}
+#overlay0 {
+	width: 0%;
+	height: 0%;
+	background-color: #fff; 
+	opacity: 0;
+	transition: background-color .5s .5s;
+}
+#overlay0.overlay1 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index:3;
+	background-color: #222;
+	opacity: 0.98;
+	transition: background-color .3s;
+	cursor: -webkit-zoom-out; cursor: -moz-zoom-out;
+}

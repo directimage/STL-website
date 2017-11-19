@@ -1,0 +1,47 @@
+
+.menu-bullet {
+	position: relative;
+	color: #999;
+	font-size: 8px;
+	bottom: 11px;
+}
+
+.menu-band {
+	background-image: url('images/menu-band.png');
+	margin-bottom: 18px;
+}
+
+.menu {
+	height: 29px;
+	text-align: justify;
+}
+.menu:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.menu div {
+	display:inline-block;
+}
+.menu a{
+	display:table-cell; 
+	height: 23px;
+	position: relative;
+	font-size: 16px;
+	color: #999;
+	text-align: center;
+	border-top: solid transparent 3px;
+	border-bottom: solid transparent 3px;
+}
+.menu a:hover {
+	border-bottom: solid #109343 3px;
+	color: #000;
+}
+.menu-active {
+	border-bottom: solid #109343 3px !important;
+	color: #000 !important;
+}
+
+
+
+
