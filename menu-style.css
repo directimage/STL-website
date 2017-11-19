@@ -27,7 +27,8 @@
 	display:table-cell; 
 	height: 23px;
 	position: relative;
-	font-size: 16px;
+	font-size: 50px;
+	background: blue;
 	color: #999;
 	text-align: center;
 	border-top: solid transparent 3px;
