@@ -7,7 +7,7 @@ function startSideSlider() {
 	$('.side-bg.top').find('img').attr('src', $('#slideshow').find('img')[(index + 1) % images.length].src);
 	$('.side-bg.bottom').find('img').attr('src', $('#slideshow').find('img')[index].src);
 	
-	setInterval(() => {
+	setInterval(function() {
 		curr = images[index];
 		index = (index + 1) % images.length;
 		next = images[index];
@@ -16,6 +16,8 @@ function startSideSlider() {
 		$('.side-bg.bottom').find('img').attr("src", next.src);
 
 		$('.side-bg.top').removeClass('hide');
-		setTimeout(() => { $('.side-bg.top').addClass('hide') }, 1);
+		setTimeout(function() { 
+			$('.side-bg.top').addClass('hide');
+		}, 1);
 	}, 2600);
 }
