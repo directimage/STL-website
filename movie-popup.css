@@ -1,11 +1,6 @@
 .video-list{
-	position: relative;
-	display: block;
-	margin: 0 auto;
 	line-height:0;
 	text-align: justify;
-	width: 936px;
-	max-height: 656px;
 	margin-top: 0; /*this + video_thumb margin-top = 14px*/
 }
 .video-list:after {
