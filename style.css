@@ -691,11 +691,15 @@ a:hover {
 	min-height: 516px;
 	text-align: justify;
 	float: left;
-	font-size: 0;
 	line-height: 0;
 }
 .galleries a{
 	text-decoration: none;
+}
+.galleries:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
 }
 .highslide img {
 	border: 1px solid #0a5828;
