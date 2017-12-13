@@ -279,7 +279,7 @@ a:hover {
     border-radius: 10px;
     opacity: .6; 
 	filter: alpha(opacity=60);
-	display: none;
+	display: none; /* currently hidden */
 }
 /* pager */
 .cycle-arrow-left {
@@ -304,9 +304,8 @@ a:hover {
 	background: url('images/pager-bg.png'); 
 	height: 84px;
 	width: 40px;
-	margin-top: 50%;
 	position: absolute;
-	top: 34px;
+	top: 156px;
 }
 
 .cycle-arrow-align-left{
@@ -328,7 +327,7 @@ a:hover {
 .cycle-pager > * { cursor: pointer;}
 
 /* prev / next links */
-.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 50%; height: 100%; opacity: 0; filter: alpha(opacity=0); z-index: 800; cursor: pointer; }
 .cycle-prev { left: 0;}
 .cycle-next { right: 0;}
 .cycle-prev:hover, .cycle-next:hover { opacity: 1.0; filter: alpha(opacity=70) }
@@ -967,15 +966,23 @@ a:hover {
 	margin: 15px 0 4px 0;
 }
 #map-box {
+	position: relative;
 	display: inline-block;
 	margin-top: 14px;
-	width: 530px;
+	width: 526px;
 	height: 456px;
 	float: right;
 	border: 1px solid #58B37B;
 }
 #map-box img {
-	width:100%;
+	width: 95%;
+	height: 100%;
+	padding-left: 15px;
+}
+.map-title {
+	position: absolute;
+	left: 340px;
+	top: 30px;
 }
 #sign-upContainer {
 	width: 444px;
