@@ -4,7 +4,7 @@
 */
 .highslide-container div {
 	font-family: Verdana, Helvetica;
-	font-size: 10pt;
+	//font-size: 10pt;
 }
 .highslide-container table {
 	background: none;
@@ -255,9 +255,12 @@ a.highslide-credits:hover i {
 	border-bottom: 1px solid #dddddd;
 }
 .titlebar .highslide-heading {
+	font-size: 13pt;
+	font-weight: normal;
+	letter-spacing: .02em;
 	position: absolute;
 	width: 100%;
-	margin: 6px 0px 1px 0px;
+	margin: 6px 0px 2px 0px;
 	color: #666666;
 }
 
@@ -281,9 +284,9 @@ a.highslide-credits:hover i {
 	padding: 0 0 0 1em;
 }
 .titlebar .highslide-maincontent {
-	padding-top: 3em;
-	padding-bottom: 1em;
+	padding-top: 2em;
 	min-height: 200px;
+	background: #EDFAED;
 }
 
 /* hs.wrapperClassName = 'no-footer' */
