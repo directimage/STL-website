@@ -749,11 +749,108 @@ a:hover {
 .highslide-dimming {
 	background: #222222;
 }
+/*_______________________________________________________
+  Gallery previous and next arrows, to override highslide*/
+.large-dark {
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
 
+.large-dark > div {
+  height: 100% !important;
+}
 
+.large-dark > div > .highslide-controls {
+  width: 100% !important;
+  height: 100% !important;
+  background-image: none !important;
+  margin: 0 !important;
+}
 
-/* New Products Page
-=================================================================================================== */
+.large-dark > div > .highslide-controls > ul {
+  height: 100% !important;
+  left: 0 !important;
+  background-image: none !important;
+}
+
+.large-dark > div > .highslide-controls > ul > .highslide-play, .large-dark > div > .highslide-controls > ul > .highslide-pause {
+  display: none !important;
+}
+
+.large-dark > div > .highslide-controls > ul > li {
+  position: absolute !important;
+  width: 50% !important;
+  height: 100% !important;
+  padding: 0 !important;
+}
+
+.large-dark > div > .highslide-controls > ul > li > a {
+  width: 100% !important;
+  height: 100% !important;
+  background-image: none !important;
+}
+
+.large-dark > div > .highslide-controls > ul > .highslide-next {
+  right: 0 !important;
+}
+
+/* Arrows */
+.large-dark > div > .highslide-controls > ul > li > a:before, .large-dark > div > .highslide-controls > ul > li > a:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-style: solid;
+  border-width: 5px 5px 0 0; /* Line thickness */
+  height: 30px; /* Arrow size; Height & Width must remain equal */
+  width: 30px;
+  border-color: #000;
+  opacity: 0;
+  transition: 0.2s opacity ease;
+}
+
+.large-dark > div > .highslide-controls > ul > li > a:after {
+  border-color: #fff;
+  border-width: 3px 3px 0 0; /* Line thickness */
+}
+
+/* Hover State */
+.large-dark > div > .highslide-controls > ul > li > a:hover:before {
+  opacity: 0.6;
+}
+
+.large-dark > div > .highslide-controls > ul > li > a:hover:after {
+  opacity: 1;
+}
+
+/* Left Arrow */
+.large-dark > div > .highslide-controls > ul > .highslide-previous > a:before, .large-dark > div > .highslide-controls > ul > .highslide-previous > a:after {
+  position: absolute;
+  left: 25px;
+  transform: translate3d(0, -50%, 0) rotate(225deg);
+}
+
+.large-dark > div > .highslide-controls > ul > .highslide-previous > a:after {
+  left: 26px;
+}
+
+/* Right Arrow */
+.large-dark > div > .highslide-controls > ul > .highslide-next > a:before, .large-dark > div > .highslide-controls > ul > .highslide-next > a:after {
+  position: absolute;
+  right: 25px;
+  transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.large-dark > div > .highslide-controls > ul > .highslide-next > a:after {
+  right: 26px;
+}
+
+/*=================================================================================================
+  New Products Page
+  =================================================================================================== */
 #newproducts-text {
 	font-size: 18px;
 	color: #109343;
