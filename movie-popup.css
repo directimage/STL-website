@@ -1,7 +1,7 @@
 .video-list{
 	line-height:0;
 	text-align: justify;
-	margin-top: 0; /*this + video_thumb margin-top = 14px*/
+	margin-top: -1px; /*this + video_thumb margin-top = 14px*, 6 column versiom -1px and 12px to even out overall height*/
 }
 .video-list:after {
     content: '';
@@ -11,9 +11,9 @@
 .video_thumb{
 	position: relative;
 	display: inline-block;
-	width: 175px;
-	height: 125px;
-	margin-top: 14px;
+	width: 146px; /*for 5 column, 175px x 125px*/
+	height: 104px;
+	margin-top: 12px;
 	border: 1px solid #0a5828;
 	overflow: hidden;
 }
@@ -50,11 +50,24 @@
 	font-family: 'Ropa+Sans', sans-serif;
 	line-height:20px;
 	text-align: center;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 	background-color: rgba(0,50,0,.7);
 	bottom: 9px;
 	color: white;
 	border-top: 1px solid #109343;
 	border-bottom: 1px solid #000;
+}
+.video-title-6col{
+	font-size: 13px;
+	line-height:22px;
+}
+.video-title-extralong{
+	/font-stretch: semi-condensed;
+	letter-spacing: -.04em;
+	font-size: 12px;
+	line-height:24px;
 }
 .popup{
 	position: fixed;
