@@ -936,22 +936,14 @@ a:hover {
 	display: block;
 	line-height:0;
 	text-align: justify;
+	text-align-last: justify;
 	margin: 0 auto;
-	margin-top: 14px;
 	width: 100%;
-}
-.quickship_categories :nth-child(-n+5){
-	margin-top: 0px;
-}
-.quickship_categories:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
 }
 .quickship_category{
 	position: relative;
 	display: inline-block;
-	margin-top: 20px;
+	margin-top: 14px;
 	border: 1px solid #0a5828;
 	width: 217px;
 	height: 155px;
@@ -960,7 +952,7 @@ a:hover {
 .quickship_category-spacer {
 	position: relative;
 	display: inline-block;
-	margin-top: 20px;
+	margin-top: 14px;
 	width: 217px;
 }
 .quickship_category a {
@@ -979,6 +971,7 @@ a:hover {
 	font-size: 15px;
 	line-height:20px;
 	text-align: center;
+	text-align-last: center;
 	background-color: rgba(0,50,0,.7);
 	bottom: 9px;
 	color: white;

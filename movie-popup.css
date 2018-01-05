@@ -13,6 +13,12 @@
 	border: 1px solid #0a5828;
 	overflow: hidden;
 }
+.video_thumb-spacer{
+	position: relative;
+	display: inline-block;
+	width: 146px;
+	margin-top: 16px;
+}
 .video_thumb img{
 	position: absolute;
 	height: 100%;
