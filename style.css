@@ -413,13 +413,13 @@ a:hover {
 }
 .new-brands div {
 	margin: 0 auto;
-	padding-top: 4px;
-	height: 134px;
+	padding-top: 6px;
+	height: 132px;
 }
 .new-brands img {
 	max-height: 50px;
 	max-width: 170px;
-	padding: 0 20px;
+	padding: 0 12px;
 }
 .news-item {
 	display: table;
