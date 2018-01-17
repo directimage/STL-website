@@ -670,7 +670,7 @@ a:hover {
 .cols {
 	display:inline-block;
 	float: left;
-	margin-bottom: 4px;
+	margin-bottom: -2px;
 }
 #col1 {
 	width: 177px;
@@ -696,21 +696,17 @@ a:hover {
 .galleries {
 	min-height: 516px;
 	text-align: justify;
+	text-align-last: justify;
 	float: left;
 	line-height: 0;
 }
 .galleries a{
 	text-decoration: none;
 }
-.galleries:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
 .highslide img {
 	border: 1px solid #0a5828;
 	width: 178px;
-	margin-bottom: 8px;
+	margin-top: 8px;
 }
 .justify-spacer{
 	border: 1px solid #fff;
@@ -871,10 +867,11 @@ a:hover {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	height: 576px;
+	height: 575px;
 	width: 100%;
 	border: 1px solid #109343;
 	margin-top: 14px;
+	margin-bottom: -3px;
 }
 .newproducts {
 	display: flex;
