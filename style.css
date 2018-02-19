@@ -642,58 +642,117 @@ a:hover {
 
 /* Photo Gallery Page
 =================================================================================================== */
-
-#gallery-menu {
+.menu-position {
+	position: absolute;
+	top: 23px;
+	left: 320px;
+}
+.gallery-menu {
+	position: relative; 
+	display: inline-block;
+	float: left;
 	font-family: STLGothic, 'Century Gothic', Arial, sans-serif;
-    font-weight: normal;
-	font-size: 17px;
-	line-height: 27px;
-	width: 100%;
-	margin-top: 15px;
+	font-size: 24px;
+	color: #64b484;
+	background: #FFF;
+	cursor: pointer;
+	padding-left: 20px;
+}
+.gallery-menu span {
+	color: #109343;
+	display: block;
+	position: absolute;
+	left: 0px;
+}
+.gallery-menu:hover {
+	color: #000;
+}
+.gallery-menu:hover span.selector {
+	transform: rotate(90deg);
+}
+.sub-menu {
+	position: absolute;
+	left: 0px;
+	margin-top: 3px;
+	background: #fff;
+	max-height: 0;
+	white-space: nowrap;
+	font-size: 21px;
+	line-height: 26px;
+	color: #109343;
+	-webkit-transition: max-height 0.6s ease;
+	-moz-transition: max-height 0.6s ease;
+	-o-transition: max-height 0.6s ease;
+	transition: max-height 0.6s ease;
+	overflow: hidden;
+	z-index: 10;
+	box-shadow: 0px 0px 4px #fff, 0px 0px 8px #fff, 0px 0px 8px #fff;
+}
+.sub-menu > a, .sub-menu > div {
+	position: relative;
+	display: block;
+	padding: 5px 24px 0px 20px;
+}
+.sub-menu > a, .sub-menu > div .ext{
+	padding: 5px 13px 0px 20px;
+}
+.sub-menu a.sub-selector span {
+	color: #109343;
+}
+.sub-menu a span{
+	display: block;
+	position: absolute;
+	right: 20px;
+	color: transparent;
+}
+.sub-menu a:hover {text-decoration: none; color: #000; text-shadow: 0 0 0 #000;}
+.sub-menu a:hover span{text-shadow:none;}
+.sub-menu a.sub-selector:hover {transform: rotate(90deg);}
+.sub-menu div.sub-selector:hover span {transform: rotate(90deg);}
+.sub-menu div.sub-selector:hover .sub-menu-2 {opacity: 1; visibility: visible;}
+.sub-menu .sub-selector span {
+	left: initial;
+	font-size: 24px;
+}
+.sub-menu-2 {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	white-space: nowrap;
+	font-size: 18px;
+	line-height: 26px;
+	opacity: 0;
+	visibility: hidden;
+	background: #fff;
+	box-shadow: 0px 0px 4px #fff, 0px 0px 8px #fff, 0px 0px 8px #fff;
+	padding:6px 13px 10px 3px;
+}
+.sub-menu-2 a {
+	display: block;
+}
+.gallery-menu:hover .sub-menu{
+	max-height: 500px;
+	overflow: visible;
+	padding-bottom: 10px;
 }
 
-#gallery-menu a {
-	text-decoration: none;
-	color: #aaa;
+/* Gallery styles ////////////////////////////*/
+.gallery-title {
+	display: inline-block;
+	font-size: 16px;
 }
-#gallery-menu a:hover {
-	color: #000;
+.gallery-instructions {
+	color: #777;
+    display: inline;
+    margin-left: 73px;
+    font-size: 13px;
 }
 .gallery-active {
 	color: #000 !important;
 	font-size: 19px;
 }
-#gallery-menu img {
-	width: 18px;
-	margin-right: 6px;
-}
-.cols {
-	display:inline-block;
-	float: left;
-	margin-bottom: -2px;
-}
-#col1 {
-	width: 177px;
-}
-#col2 {
-	width: 147px;
-}
-#col3 {
-	width: 160px;
-}
-#col4 {
-	width: 167px;
-}
-#col5 {
-	width: 157px;
-}
-#col6 {
-	width: 128px;
-}
-
-/* Gallery styles */
-
 .galleries {
+	margin-top: -4px;
 	min-height: 516px;
 	text-align: justify;
 	text-align-last: justify;
