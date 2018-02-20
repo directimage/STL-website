@@ -646,6 +646,7 @@ a:hover {
 	position: absolute;
 	top: 23px;
 	left: 320px;
+	z-index: 100;
 }
 .gallery-menu {
 	position: relative; 
@@ -656,84 +657,90 @@ a:hover {
 	color: #64b484;
 	background: #FFF;
 	cursor: pointer;
-	padding-left: 20px;
 }
-.gallery-menu span {
-	color: #109343;
-	display: block;
-	position: absolute;
-	left: 0px;
+.gallery-menu div {
+	white-space: nowrap;
 }
 .gallery-menu:hover {
 	color: #000;
 }
-.gallery-menu:hover span.selector {
-	transform: rotate(90deg);
+@keyframes overflow-show {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
+  }
+}
+.gallery-menu:hover .sub-menu {
+	max-height: 600px;
+	animation: overflow-show 0.5s;
+	animation-fill-mode: forwards;
+}
+.gallery-menu:hover .selector:before,
+.menu-item:hover .sub-selector:after {
+	transform: rotate(90deg) scale(0.45);
+	z-index: 100;
+}
+.selector:before,
+.sub-selector:after {
+	content: '\25B6';
+	transform: scale(0.45);
+    display: inline-block;
+}
+.selector {
+	position: relative;
+	z-index: 100;
 }
 .sub-menu {
+	background: white;
 	position: absolute;
-	left: 0px;
-	margin-top: 3px;
-	background: #fff;
+	background: white;
+	color: #109343;
 	max-height: 0;
-	white-space: nowrap;
-	font-size: 21px;
-	line-height: 26px;
-	color: #109343;
-	-webkit-transition: max-height 0.6s ease;
-	-moz-transition: max-height 0.6s ease;
-	-o-transition: max-height 0.6s ease;
-	transition: max-height 0.6s ease;
+	transition: all 0.5s;
 	overflow: hidden;
-	z-index: 10;
-	box-shadow: 0px 0px 4px #fff, 0px 0px 8px #fff, 0px 0px 8px #fff;
+    font-size: 21px;
+    box-shadow: 0px 0px 4px #fff, 0px 0px 8px #fff, 0px 0px 8px #fff;
 }
-.sub-menu > a, .sub-menu > div {
+.sub-menu {
+	margin-top: 5px;
+}
+.gallery-menu:hover .sub-menu:last-child {
+	padding-bottom: 10px;
+}
+.menu-item {
 	position: relative;
-	display: block;
-	padding: 5px 24px 0px 20px;
-}
-.sub-menu > a, .sub-menu > div .ext{
-	padding: 5px 13px 0px 20px;
-}
-.sub-menu a.sub-selector span {
-	color: #109343;
-}
-.sub-menu a span{
-	display: block;
-	position: absolute;
-	right: 20px;
-	color: transparent;
-}
-.sub-menu a:hover {text-decoration: none; color: #000; text-shadow: 0 0 0 #000;}
-.sub-menu a:hover span{text-shadow:none;}
-.sub-menu a.sub-selector:hover {transform: rotate(90deg);}
-.sub-menu div.sub-selector:hover span {transform: rotate(90deg);}
-.sub-menu div.sub-selector:hover .sub-menu-2 {opacity: 1; visibility: visible;}
-.sub-menu .sub-selector span {
-	left: initial;
-	font-size: 24px;
+    line-height: 31px;
+    padding-left: 20px;
 }
 .sub-menu-2 {
+	background: white;
 	position: absolute;
 	left: 100%;
 	top: 0;
-	white-space: nowrap;
+	z-index: 100;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+	box-shadow: 0px 0px 4px #fff, 0px 0px 8px #fff, 0px 0px 8px #fff;
+}
+.sub-menu-2 div {
 	font-size: 18px;
 	line-height: 26px;
-	opacity: 0;
-	visibility: hidden;
-	background: #fff;
-	box-shadow: 0px 0px 4px #fff, 0px 0px 8px #fff, 0px 0px 8px #fff;
-	padding:6px 13px 10px 3px;
+	padding-right: 12px;
 }
-.sub-menu-2 a {
-	display: block;
+.sub-menu-2 div:first-child {
+	padding-top: 5px;
 }
-.gallery-menu:hover .sub-menu{
-	max-height: 500px;
-	overflow: visible;
+.menu-item:hover  .sub-menu-2:last-child {
 	padding-bottom: 10px;
+}
+.menu-item:hover .sub-menu-2 {
+	max-height: 600px;
+}
+.ext {
+	padding-right: 20px;
 }
 
 /* Gallery styles ////////////////////////////*/
