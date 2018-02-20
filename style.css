@@ -661,8 +661,18 @@ a:hover {
 .gallery-menu div {
 	white-space: nowrap;
 }
-.gallery-menu:hover {
+.gallery-menu:hover, .sub-selector:hover, .menu-item:hover{
 	color: #000;
+}
+.sub-selector:hover, .menu-item:hover {
+	text-shadow: 0 0 0 #000;
+}
+.sub-menu-item {
+	color:#109343;
+}
+.sub-menu-item:hover {
+	color:#000;
+	text-shadow: 0 0 0 #000;
 }
 @keyframes overflow-show {
   0% {
@@ -749,10 +759,10 @@ a:hover {
 	font-size: 16px;
 }
 .gallery-instructions {
-	color: #777;
+	color: #888;
     display: inline;
     margin-left: 73px;
-    font-size: 13px;
+    font-size: 12px;
 }
 .gallery-active {
 	color: #000 !important;
