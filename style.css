@@ -657,6 +657,7 @@ a:hover {
 	color: #64b484;
 	background: #FFF;
 	cursor: pointer;
+	padding-bottom: 5px;
 }
 .gallery-menu div {
 	white-space: nowrap;
