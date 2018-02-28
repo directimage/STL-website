@@ -15,9 +15,9 @@
 	<script src="gallery-highslide/highslide/highslide.config.js" charset="utf-8" type="text/javascript"></script>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="scripts/side-slideshow.js"></script>
+	<script src="scripts/makeGallery.js"></script>
 </head>
 <body>
-	<script type="text/javascript">writeFile("galleries-html/zthumbs-preLoad.html")</script>
 	<div id="overlay0" onclick="closePopup()">
 	</div>
 	<div class="overflow-control">
@@ -63,38 +63,39 @@
 								<div class="menu-item">
 									<div class="sub-selector">Commercial</div>
 									<div class="sub-menu-2">
-										<div class="sub-menu-item" onclick="writeFileToRemoteTarget('galleries-html/commercial-gallery.html', 'galleries')">Recessed</div>
-										<div class="sub-menu-item" onclick="writeFileToRemoteTarget('galleries-html/custom-gallery.html', 'galleries')">Surface</div>
-										<div class="sub-menu-item">Pendant</div>
-										<div class="sub-menu-item">Linear Suspended</div>
-										<div class="sub-menu-item">Wall &amp; Cove</div>
-										<div class="sub-menu-item">Spot &amp; Display</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Commercial Recessed', 'commercial-recessed', 'six-col', 4)">Recessed</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Commercial Surface', 'commercial-surface', 'six-col', 4)">Surface</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Commercial Pendant', 'commercial-pendant', 'six-col', 4)">Pendant</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Commercial Linear Suspended', 'commercial-linear-suspended', 'six-col', 0)">Linear Suspended</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Commercial Wall & Cove', 'commercial-wall-cove', 'six-col', 2)">Wall &amp; Cove</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Commercial Spot & Display', 'commercial-spot-display', 'six-col', 2)">Spot &amp; Display</div>
 									</div>
 								</div>
-								<div class="menu-item">Retail</div>
-								<div class="menu-item">Hospitality</div>
-								<div class="menu-item">Education</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Retail', 'retail', 'six-col', 0)">Retail</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Hospitality', 'hospitality', 'six-col', 0)">Hospitality</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Education', 'education', 'five-col', 2)">Education</div>
 								<div class="menu-item">
 									<div class="sub-selector">Residential</div>
 									<div class="sub-menu-2">
-										<div class="sub-menu-item">Recessed</div>
-										<div class="sub-menu-item">Surface &amp; Track</div>
-										<div class="sub-menu-item">Pendant</div>
-										<div class="sub-menu-item">Wall &amp; Cove</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Residential Recessed', 'residential-recessed', 'six-col', 0)">Recessed</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Residential Surface & Track', 'residential-surface-track', 'six-col', 0)">Surface &amp; Track</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Residential Pendant', 'residential-pendant', 'six-col', 0)">Pendant</div>
+										<div class="sub-menu-item" onclick="makeGallery('galleries', 'Interior: Residential Wall & Cove', 'residential-wall-cove', 'six-col', 0)">Wall &amp; Cove</div>
 									</div>
 								</div>
-								<div class="menu-item">Industrial</div>
-								<div class="menu-item">Sports</div>
-								<div class="menu-item">Religious</div>
-								<div class="menu-item">Custom</div>
-								<div class="menu-item">Transit</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Industrial', 'industrial', 'five-col', 0)">Industrial</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Healthcare', 'healthcare', 'five-col', 2)">Healthcare</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Sports', 'sports', 'four-col', 3)">Sports</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Religious', 'religious', 'four-col', 2)">Religious</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Custom', 'custom', 'five-col', 0)">Custom</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Interior: Transit', 'transit', 'four-col', 0)">Transit</div>
 							</div>
 						</div>
 						<div class="gallery-menu" style="margin-left:100px;">
 							<div class="selector">EXTERIOR</div>
 							<div class="sub-menu ext">
-								<div class="menu-item">Landscape</div>
-								<div class="menu-item">Bollard</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Exterior: Landscape', 'exterior-landscape', 'five-col', 2)">Landscape</div>
+								<div class="menu-item" onclick="makeGallery('galleries', 'Exterior: Bollard', 'exterior-bollard', 'six-col', 2)">Bollard</div>
 								<div class="menu-item">Ground</div>
 								<div class="menu-item">In Ground</div>
 								<div class="menu-item">Wall Surface</div>
@@ -106,13 +107,14 @@
 							</div>
 						</div>
 					</div>
-					<div style="border-top: 1px solid #109343; margin: 14px 0 4px 0;">
+					<div style="border-top: 1px solid #109343; margin: 14px 0 7px 0;">
 					</div>
 				</div>
 				<div style="clear: both">
 				</div>
+				
 				<div id="galleries" style="min-height: 560px;">
-					<script type="text/javascript">writeFile("galleries-html/commercial-gallery.html")</script>
+					<script>$('.sub-menu-item')[0].click()</script>
 				</div>
 				<div style="clear: both"></div>
 			</div>

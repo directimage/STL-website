@@ -698,6 +698,7 @@ a:hover {
 	content: '\25B6';
 	transform: scale(0.45);
     display: inline-block;
+	color: #109343;
 }
 .selector {
 	position: relative;
@@ -770,7 +771,7 @@ a:hover {
 	font-size: 19px;
 }
 .galleries {
-	margin-top: -4px;
+	margin-top: -6px;
 	min-height: 516px;
 	text-align: justify;
 	text-align-last: justify;
@@ -780,16 +781,27 @@ a:hover {
 .galleries a{
 	text-decoration: none;
 }
+
+/*--setting columns of images, use appropriate (num)-col class 
+highslide>img tag*/
+
 .highslide img {
 	border: 1px solid #0a5828;
-	width: 147px;
 	margin-top: 8px;
 }
 .justify-spacer{
-	border: 1px solid #fff;
 	display: inline-block;
+}
+.six-col {
+	width: 147px; /*Equal to highslide img width*/
+}
+.five-col {
 	width: 178px; /*Equal to highslide img width*/
 }
+.four-col {
+	width: 225px; /*Equal to highslide img width*/
+}
+
 .highslide-heading {
 	display: none;
 	font-size: 15px;
