@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>STL Lighting Group &#124; About Us</title>
+	<meta charset="utf-8">
+	<meta name="description" content="A full-service LED lighting and controls representative for Commercial, Industrial, and Architectural lighting solutions in the GTA"/>
+	<meta name="format-detection" content="telephone=no">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="menu-style.css" rel="stylesheet" type="text/css">
+	<script src="scripts/openfile.js"></script>
+	<script src="scripts/setActiveMenu.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="scripts/side-slideshow.js"></script>
+</head>
+<body>
+	<div class="overflow-control">
+		<div id="header-bg">
+			<div class="content">
+				<!--writes in the header from STL-menu.html-->
+				<script>writeFile("global_html/header.html")</script>
+			</div>
+		</div>
+		
+		<div class="content-wide menu-band">
+			<div class="content menu">
+				<!--writes in the menu from STL-menu.html-->
+				<script>writeFile("global_html/STL-menu.html")</script>
+				<!--makes a button active-->
+				<script>setActive('about us', 'menu-active')</script>
+			</div>
+		</div>
+		<div class="content-wide">
+			<div class="content main-min-height">
+				<!-- Side slideshow section -->
+				<div class="side-bg right top hide"><img src="images/empty.png" alt="slideshow"></div>
+				<div class="side-bg right bottom"><img src="images/empty.png" alt="RHS panel image"></div>
+				
+				<div class="side-bg left top hide"><img src="images/empty.png" alt="slideshow"></div>
+				<div class="side-bg left bottom"><img src="images/empty.png" alt="LHS panel image"></div>
+				
+				<div id="slideshow" style="display: none">
+					<script>
+						writeFile("slideshow-images.html");
+						startSideSlider();
+					</script>
+				</div>
+				<!-- End Side slideshow section -->
+				
+				<div class="page-heading">
+					<h1>About Us</h1>
+				</div>
+				<div style="border-top: 1px solid #109343; margin: 14px 0 12px 0;">
+				</div>
+				<div class="heading-subtext">
+					<p>STL Lighting Group is a full service, leading supplier of architectural lighting and controls for the Greater Toronto Area 
+					and beyond, for Ontario, Canada. We offer over 10,000 lighting products to meet your needs for any project; Commercial, Retail, 
+					Transit, Hospitality, Healthcare, Industrial, Sports, Outdoor, Residential or Custom applications. Our wide assortment of 
+					advanced LED solid-state lighting technology and systems, provides you with a dependable lighting source from our 
+					prestigious selection of high quality manufacturers.</p>
+					<p>We maintain dedicated sales and service professionals to ensure complete satisfaction on every project to deliver 
+					"ILLUMINATION BEYOND EXPECTATION". Whether you are a professional Engineer, Architect, Interior Designer, or Contractor, 
+					STL Lighting Group will strive to be your lighting supplier of choice.</p>
+				</div>
+				<div class="project">
+					<div class="project-title">
+						<p>Lighting Calculation Study</p>
+						<div class="project-title-sub">
+							Durham Hospice Project AGI
+						</div>
+					</div>
+				</div>
+				<div class="pdf-icon">
+				<a href="images/about_us/Durham Hospice Project v2.pdf" target="_blank" alt="Durham Hospice Project">
+					<img src="images/pdf-icon.png"/>
+				</a>
+				</div>
+				<div class="project-snapshots">
+					<img src="images/about_us/durham-hospice-3a.jpg"/>
+					<img src="images/about_us/durham-hospice-1a.jpg"/>
+					<img src="images/about_us/durham-hospice-4a.jpg"/>
+				</div>
+			</div>
+			
+			<div style="border-top: 1px solid #109343; margin: 20px 0 12px 0;">
+			</div>
+			<div id="footer-bg">
+				<div class="content">
+					<div style="border: 1px solid #fff;">
+						<script>writeFile("global_html/brand-table.html")</script>
+					</div>
+				</div>
+				<div class="content">
+					<script>writeFile("global_html/socialmedia.html")</script>
+					<div style="clear: both"></div>
+				</div>
+			</div>
+			<div style="border-top: 1px solid #109343; margin: 12px 0 30px 0;">
+			</div>
+		</div>
+	</div>
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script>
+	var sc_project=9144760; 
+	var sc_invisible=1; 
+	var sc_security="f2b71a03"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="web analytics"
+	href="http://statcounter.com/" target="_blank"><img
+	class="statcounter"
+	src="//c.statcounter.com/9144760/0/f2b71a03/1/" alt="web
+	analytics"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

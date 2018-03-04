@@ -18,10 +18,3 @@ function setActiveGallery(targetID){
 	nextMenuLink.getElementsByTagName('img')[0].src="images/gallery-bullet-on.png";
 	lastActive = targetID;
 }
-
-//  setActiveGallery('commercial', 'gallery-active'){
-// 	var nextMenuLink = document.getElementById('commercial'); 
-// 	nextMenuLink.className = 'gallery-active';
-// 	nextMenuLink.getElementsByTagName('img')[0].src="images/gallery-bullet-on.png";
-//  }
-'gallery-active'

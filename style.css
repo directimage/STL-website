@@ -57,9 +57,11 @@ h1 {
 
 h2 {
 	font-size: 26px;
-	line-height: 26px;
+	line-height: 28px;
 }
-
+h2 span{
+	color: #88C9A1;
+}
 h3 {
 	display: block;
 	float: right;
@@ -357,11 +359,17 @@ a:hover {
 	letter-spacing: .05em;
 }
 /*styles before popup*/
-#newsletter {
+#newsletter{
 	width:176px;
 	display: block;
 	float: left;
 	margin-top:20px;
+}
+#newsletter-heading {
+    font-family: STLGothic, 'Century Gothic', Arial, sans-serif;
+    font-weight: normal;
+	font-size:26px;
+	line-height: 28px;
 }
 #newsletter p {
 	padding-top: 5px;
@@ -381,7 +389,7 @@ a:hover {
 	background-image: url('images/sign-up-off.png');
 	width: 142px;
 	height: 45px;
-	margin-top: 8px;
+	margin-top: 3px;
 }
 .sign-up:hover {
 	background-image: url('images/sign-up-on.png');
@@ -502,6 +510,7 @@ a:hover {
 }
 /* successfuly sent*/
 
+
 #form {
 	margin-top: 25px;
 }
@@ -551,30 +560,58 @@ a:hover {
 	font-size: 11px !important;
 	color: red;
 }
+/* SERVICES
+=================================================================================================== */
+.heading-subtext {
+	position:relative; 
+	display:block; 
+	margin: 0 auto; 
+	width: 760px;
+}
+.heading-subtext p{
+	margin-top: 8px;
+}
+.project {
+	position: relative;
+	display: inline-block;
+	height: 77px;
+}
+.project-title {
+	margin: 36px 0 4px 0;
+	font-size: 16px;
+	text-shadow: .2px .2px 0px #000;
+}
+.project-title-sub {
+	font-size: 14px;
+	text-shadow:none;
+}
+.pdf-icon {
+	display: inline-block;
+	margin-left: 6px;
+	vertical-align: bottom;
+}
+.pdf-icon img{
+	height: 42px;
+}
+.project-snapshots {
+	margin-top: 6px;
+}
+.project-snapshots img {
+	display: inline-block;
+	margin-right: -5px;
+}
+.project-snapshots img:not(:first-child){
+	margin-left: 9px;
+
+}
 
 /* LINE CARD
 =================================================================================================== */
 
-#partner-textbox {
-	display: block;
-	width: 934px;
-	margin-top: 14px;
-}
-#partner-text {
-	position:relative; 
-	display:block; 
-	margin: 0 auto; 
-	width: 760px; 
-	padding-top: 4px;
-}
-#partner-text p {
-	margin-bottom: 12px;
-}
-
 #logo-matrix {
+	margin-top: 10px;
 	position:relative;
 	display: block;
-	margin-top: 18px;
 	width: 936px;
 }
 #logo-matrix table{
@@ -583,7 +620,7 @@ a:hover {
 	width: 100%;
 }
 #logo-matrix td{
-	height: 78px;
+	height: 80px;
 	text-align: center;
 	line-height: 0;
 	border: 2px solid #e0e0df;
