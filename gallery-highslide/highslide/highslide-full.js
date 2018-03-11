@@ -755,7 +755,7 @@ mouseClickHandler : function(e)
 			
 			if (!hasDragged &&!hs.hasFocused && !/(move|resize)/.test(hs.dragArgs.type)) {
 				if (hs.fireEvent(exp, 'onImageClick'))
-				exp.close();
+				//exp.close();
 			} 
 			else if (hasDragged || (!hasDragged && hs.hasHtmlExpanders)) {
 				hs.dragArgs.exp.doShowHide('hidden');

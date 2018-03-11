@@ -10,14 +10,13 @@ hs.align = 'center';
 hs.allowMultipleInstances = false;
 hs.enableKeyListener = false;
 hs.captionOverlay.position = 'bottom center';
+hs.restoreCursor = null;
 hs.registerOverlay({
 	html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
 	position: 'top right',
 	useOnHtml: true,
 	fade: 2 // fading the semi-transparent overlay looks bad in IE
 });
-
-
 
 // Add the slideshow controller
 hs.addSlideshow({
@@ -49,7 +48,6 @@ var config1 = {
 };
 
 // Add Title Overlay
-
 hs.registerOverlay({
 	thumbnailId: null,
 	overlayId: 'my-overlay',

@@ -607,7 +607,8 @@ mouseClickHandler : function(e)
 			var hasDragged = hs.dragArgs.hasDragged;
 			
 			if (!hasDragged &&!hs.hasFocused && !/(move|resize)/.test(hs.dragArgs.type)) {
-				exp.close();
+				// Brandon Hack
+				//exp.close();
 			} 
 			else if (hasDragged || (!hasDragged && hs.hasHtmlExpanders)) {
 				hs.dragArgs.exp.doShowHide('hidden');
