@@ -583,7 +583,7 @@ a[href^="tel:"] {
 	height: 75px;
 }
 .project-title {
-	margin: 36px 0 4px 0;
+	margin-top: 36px;
 	font-size: 16px;
 	text-shadow: .2px .2px 0px #000;
 }
@@ -600,7 +600,7 @@ a[href^="tel:"] {
 	height: 42px;
 }
 .project-snapshots {
-	margin-top: 6px;
+	margin-top: 9px;
 }
 .project-snapshots img {
 	display: inline-block;
@@ -613,7 +613,7 @@ a[href^="tel:"] {
 .hiring {
 	display: block;
 	width: 644px;
-	height: 62px;  /*82px;*/
+	height: 82px;
 	margin: 0 auto;
 	margin-top: 36px;
 	padding-top: 19px;
