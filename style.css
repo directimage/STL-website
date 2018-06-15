@@ -630,6 +630,21 @@ a[href^="tel:"] {
 
 /* LINE CARD
 =================================================================================================== */
+/*Styles for View by Application*/
+.application {
+	margin: 16px 0 16px 80px;
+	font-size: 13px;
+	color: #aaa;
+}
+.application ul{
+	display:inline-block;
+	margin-right: 50px;
+	list-style-image: url('images/small-uncheckbox.png');
+	list-style-type: none;
+}
+.application ul:last-of-type {
+	margin: 0;
+}
 
 #logo-matrix {
 	margin-top: 10px;
