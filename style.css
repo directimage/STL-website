@@ -632,20 +632,28 @@ a[href^="tel:"] {
 =================================================================================================== */
 /*Styles for View by Application*/
 .application {
-	margin: 16px 0 16px 80px;
-	font-size: 13px;
+	margin-left: 60px;
+	font-size: 12px;
+	//line-height: 16px;
 	color: #aaa;
 }
 .application ul{
-	display:inline-block;
+	display:block;
+	float: left;
 	margin-right: 50px;
+	margin-bottom: 14px;
 	list-style-image: url('images/small-uncheckbox.png');
 	list-style-type: none;
 }
 .application ul:last-of-type {
 	margin: 0;
 }
-
+.checked{
+	list-style-image: url('images/linecard-bullet-on.png') !important;
+	margin-right: 40px;
+	color: black;
+	font-size: 15px;
+}
 #logo-matrix {
 	margin-top: 10px;
 	position:relative;
