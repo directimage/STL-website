@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>STL Lighting Group &#124; Line Card</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Representing major North American lighting manufacturers. We provide full-service planning, design, contracting and distribution.">
+	<meta name="format-detection" content="telephone=no">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="styleV3.css" rel="stylesheet" type="text/css">
+	<link href="menu-style.css" rel="stylesheet" type="text/css">
+	<script src="scripts/openfile.js"></script>
+	<script src="scripts/setActiveMenu.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="scripts/side-slideshow.js"></script>
+</head>
+<body>
+	<div class="overflow-control">
+		<div id="header-bg">
+			<div class="content">
+				<!--writes in the header from STL-menu.html-->
+				<script>writeFile("global_html/header.html")</script>
+			</div>
+		</div>
+		<div class="content-wide menu-band">
+			<div class="content menu">
+				<!--writes in the menu from STL-menu.html-->
+				<script>writeFile("global_html/STL-menu.html")</script>
+				<!--makes a button active-->
+				<script>setActive('line-card', 'menu-active')</script>
+			</div>
+		</div>	
+		<div class="content-wide">		
+			<div class="content main-min-height">
+				<!-- Side slideshow section -->
+				<div class="side-bg right top hide"><img src="images/empty.png" alt="slideshow"></div>
+				<div class="side-bg right bottom"><img src="images/empty.png" alt="RHS panel image"></div>
+				
+				<div class="side-bg left top hide"><img src="images/empty.png" alt="slideshow"></div>
+				<div class="side-bg left bottom"><img src="images/empty.png" alt="LHS panel image"></div>
+				
+				<div id="slideshow" style="display: none">
+					<script>
+						writeFile("slideshow-images.html");
+						startSideSlider();
+					</script>
+				</div>
+				<!-- End Side slideshow section -->
+				
+				<div class="page-heading">
+					<h1>Line Card</h1>
+				</div>
+				<div style="border-top: 1px solid #109343; margin: 14px 0 12px 0;">
+				</div>
+				<div>
+				<h2>Our Partners: <span>Integrity Through Strategic Alliances</span></h2>
+				</div>
+				<div style="margin-top:8px;">
+					STL Lighting Group prides itself on offering our brands unsurpassed representation through marketing 
+					and promotion. We strive for superiority in every aspect of our offered services including involvement in planning, 
+					design, contracting and distribution of our brands to ensure seamless product integration into any project.
+				</div>
+			<div style="border-top: 1px solid #109343; margin: 14px 0;">
+			</div>
+			<div class="applications">
+				<form id="selector">
+					<div class="input-column">
+						<input type="radio" name="type" value="all" checked="checked"> All Manufacturers<br>
+					</div>
+					<div class="input-column">
+						<input type="radio" name="type" value="commercial-downlight"> Commercial Downlight<br>
+						<input type="radio" name="type" value="commercial-surface"> Commercial Surface<br>
+						<input type="radio" name="type" value="commercial-pendant"> Commercial Pendant<br>
+						<input type="radio" name="type" value="commercial-linear"> Commercial Linear<br>
+						<input type="radio" name="type" value="commercial-wall"> Commercial Wall<br>
+						<input type="radio" name="type" value="commercial-cove"> Commercial Cove<br>
+						<input type="radio" name="type" value="commercial-spot"> Commercial Spot, Display<br>
+						<input type="radio" name="type" value="industrial"> Industrial
+					</div>
+				</form>
+					<!--
+						<li>Retail</li>
+						<li>Healthcare</li>
+						<li>Hospitality</li>
+						<li>Education</li>
+						<li>Gymnasium, Arena</li>
+						<li>Theatre</li>
+						<li>Lighting Controls</li>
+						<li>Emergency & Exit</li>
+					</ul>
+					<ul>
+						<li>Transit</li>
+						<li>Custom</li>
+						<li>Designer</li>
+						<li>Religious</li>
+						<li>Residential Recesed</li>
+						<li>Residential Surface</li>
+						<li>Residential Pendant</li>
+						<li>Residential Wall & Cove</li>
+					</ul>
+					<ul>
+						<li>Landscape</li>
+						<li>Solar</li>
+						<li>Bollard</li>
+						<li>Inground & Flood</li>
+						<li>Outdoor Wall & Step</li>
+						<li>Post, Top & Pendant</li>
+						<li>Roadway</li>
+						<li>Sport Field</li>
+					</ul>-->
+			</div>
+			<div style="clear: both;"></div>
+			<div class="content">
+				<table id="itemlist">
+					<tr class="commercial-downlight industrial">
+						<td class="list-logos">
+							<a href="http://alphabetlighting.com/" title="Alphabet Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/alphabet.png" alt="" />
+							</a>
+						</td>
+						<td class="list-text">
+							high performance and energy efficient LED track and spots, markers, cove, downlights, low bays, pendants and wall sconces
+						</td>
+					</tr>
+					<tr class="commercial-wall">
+						<td class="list-logos">
+							<a href="http://www.alvalight.com/" title="Alva Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/alva.png" alt="" />
+							</a>
+						</td>
+						<td class="list-text">
+							decorative LED wall sconces
+						</td>
+					</tr>
+				</table>
+				
+				<!--<div id="itemlist">
+				
+					<div id="item" class="commercial-downlight industrial">
+						<div class="list-logos">
+							<a href="http://alphabetlighting.com/" title="Alphabet Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/alphabet.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text">
+							<div class="summary">
+								high performance and energy efficient LED track and spots, markers, cove, downlights, low bays, pendants and wall sconces
+							</div>
+						</div>
+					</div>	
+					
+					<div id="item" class="commercial-wall"> 	
+						<div class="list-logos">
+							<a href="http://www.alvalight.com/" title="Alva Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/alva.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text">
+							<div class="summary">
+								decorative LED wall sconces
+							</div>
+						</div>
+					</div>
+						
+						<div class="list-logos">
+							<a href="http://us.auroralighting.com/" title="Aurora Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/aurora.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">design and manufacturing of innovative LED lighting and IoT technology
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.brucklighting.com/" title="Bruck Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/bruck-ledra.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1 list-text2">architectural LED low and line voltage track systems, decorative glass, and performance LED spots, downlights, linear and accent fixtures 
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.cyclonelighting.com/" title="Cyclonee Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/cyclone.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">manufacturer of quality luminaires and decorative outdoor accessories
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.dreamscapelighting.com/" title="Dreamscape Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/dreamscape.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">manufacturer of landscape lighting and architectural interior systems
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://eskodesign.com/" title="Esko Design" target="_blank" alt="Esko Design link">&thinsp;<img src="images/line_card/esko.jpg"></a>
+						</div>
+						<div class="list-text1">Danish manufacturer and designer of innovative high-quality LED lamps and component parts
+						</div>
+						
+						<div class="list-logos">
+							<a href="https://products.currentbyge.com/" title="GE Current" target="_blank">
+								&thinsp;<img src="images/line_card/GE-Current.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">LED area lighting, legacy GE products
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.gmlighting.net/" title="GM Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/gm.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">LED systems for commercial and residential applications
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.ilp-inc.com/" title="ILP Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/ILP.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-text1 list-text2">high-efficiency lighting products for a wide variety of commercial, industrial, <br>and outdoor applications
+						</div>
+						
+						<div class="list-logos">
+							<a href="https://www.intrigueled.com/" title="Intrigue Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/intrigue.png" alt="Intrigue Lighting LED"/>
+							</a>
+						</div>
+						<div class="list-text1 list-text1"> high quality architectural, pedestrian-scale, exterior LED lighting fixtures
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.jobe-lighting.com/en/" title="JoBe Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/jobe.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">maintence free outdoor LED lighting systems of solid block polymer concrete design
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.ldpi-inc.com/" title="LDPi Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/ldpi.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">high performance industrial LED lighting fixtures for hazardous and demanding locations
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.ledalux.com/" title="LEDalux" target="_blank">
+								&thinsp;<img src="images/line_card/ledalux.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">state-of-the-art LED technology products for all lighting applications
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://leds-c4.us/" title="LEDS-C4" target="_blank">
+								&thinsp;<img src="images/line_card/leds-c4.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">international LED lighting company for interior and exterior lighting applications
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.lumascape.com/" title="Lumascape" target="_blank">
+								&thinsp;<img src="images/line_card/lumascape.png" alt="Lumascape logo" />
+							</a>
+						</div>
+						<div class="list-text1"> premier manufacturer of highly durable exterior, in-grade and underwater lighting products
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.lumiumlighting.com/" title="Lumium Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/lumium.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">highly efficient linear products with unique profiles and extensive customization options
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.metalumen.com/" title="Metalumen" target="_blank">
+								&thinsp;<img src="images/line_card/metalumen.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1 list-text2">a leading Canadian manufacturer of linear lighting solutions for education, health care, commercial and transportation
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.modernforms.com/" title="Modern Forms" target="_blank">
+								&thinsp;<img src="images/line_card/modern-forms-v.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">interior and exterior architectural lighting
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.moltolucelighting.com/" title="Molto Luce" target="_blank">
+								&thinsp;<img src="images/line_card/moltoluce.jpg" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">the latest of Italian designed pendants, display lights, wall & ceiling, and linear lights
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.mulelighting.com/" title="Mule Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/mule.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1 list-text2">extensive selection of emergency lighting solutions with a wide array of remote options and accessories
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.rebellelighting.com/" title="Rebelle Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/rebelle.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">a Canadian manufacturer of architectural interior and exterior lighting systems
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.sensolighting.com/" title="Senso Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/senso.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">LED fixtures, recessed downlights, pendant mounted
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.spilighting.com/" title="SPI Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/spi.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">a leader in performance architectural lighting systems
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.tempollc.com/" title="Tempo Industries" target="_blank">
+								&thinsp;<img src="images/line_card/tempo.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1">designs and manufactures LED linear, configurable lighting systems
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.usaltg.com/Products/ProdsUSArch.html" title="US Architectural Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/us_architectural.jpg" alt="US Architectural Lighting" />
+							</a>
+						</div>
+						<div class="list-text1">contemporary site and area lighting with precisely sculpted housing shapes and tool-free access 
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.usaltg.com/Products/ProdsSV.html" title="Sun Valley Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/us_sun-valley.jpg" alt="Sun Valley Lighting" />
+							</a>
+						</div>
+						<div class="list-text1">a large selection of traditional and durable site and area lighting in many styles and finishes
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.vltcorp.com/" title="Visual Lighting Technologies" target="_blank">
+								&thinsp;<img src="images/line_card/visual.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1"> design and manufacturer of interior and exterior LED fixtures, and spec-grade fiber optics
+						</div>
+						
+						<div class="list-logos">
+							<a href="http://www.waclighting.com/USA/" title="WAC Lighting" target="_blank">
+								&thinsp;<img src="images/line_card/wac-v.png" alt="" />
+							</a>
+						</div>
+						<div class="list-text1 list-text2">WAC Lighting has developed a stellar reputation for high quality decorative and task lighting lines backed by an extraordinary level of service
+						</div> 
+				</div>-->
+				<script>
+					function formSelect() {
+						var type = $( 'input[name=type]:checked' ).val();
+						$('#itemlist').removeClass().addClass(type);
+					};
+					$('#selector').change(formSelect);
+					formSelect();
+				</script>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<div style="border-top: 1px solid #109343; margin: 20px 0 12px 0;">
+		</div>
+		<div id="footer-bg">
+			<div class="content">
+				<div>
+				<script>writeFile("global_html/brand-table.html")</script>
+				</div>
+			</div>
+			<div class="content">
+				<script>writeFile("global_html/socialmedia.html")</script>
+				<div style="clear: both"></div>
+			</div>
+		</div>
+		<div style="border-top: 1px solid #109343; margin: 12px 0 30px 0;">
+		</div>
+	</div>
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script>
+	var sc_project=9144760; 
+	var sc_invisible=1; 
+	var sc_security="f2b71a03"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="web analytics"
+	href="http://statcounter.com/" target="_blank"><img
+	class="statcounter"
+	src="//c.statcounter.com/9144760/0/f2b71a03/1/" alt="web
+	analytics"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
