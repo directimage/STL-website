@@ -1,0 +1,26 @@
+/*Styles for View by Application*/
+.application {
+	margin-left: 38px;
+	margin-top: -4px;
+	margin-bottom: 8px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #aaa;
+	width: 758px;
+}
+.application ul{
+	display:block;
+	float: left;
+	margin-right: 35px;
+	margin-bottom: 14px;
+	list-style-image: url('images/small-uncheckbox.png');
+	list-style-type: none;
+}
+.application ul:last-of-type {
+	//margin: 0;
+}
+.checked{
+	list-style-image: url('images/bullet-on.png') !important;
+	color: black;
+	font-size: 15px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STL Lighting Group &#124; Product Search</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Representing major North American lighting manufacturers. Search here for your perfect fixture.">
+    <meta name="format-detection" content="telephone=no">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="menu-style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/openfile.js"></script>
+    <script src="scripts/setActiveMenu.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="scripts/side-slideshow.js"></script>
+</head>
+<body>
+    <div class="overflow-control">
+        <div id="header-bg">
+            <div class="content">
+                <!--writes in the header from STL-menu.html-->
+                <script>writeFile("global_html/header.html")</script>
+            </div>
+        </div>
+        <div class="content-wide menu-band">
+            <div class="content menu">
+                <!--writes in the menu from STL-menu.html-->
+                <script>writeFile("global_html/STL-menu.html")</script>
+                <!--makes a button active-->
+                <script>setActive('line-card', 'menu-active')</script>
+            </div>
+        </div>  
+        <div class="content-wide">      
+            <div class="content main-min-height">
+                <!-- Side slideshow section -->
+                <div class="side-bg right top hide"><img src="images/empty.png" alt="slideshow"></div>
+                <div class="side-bg right bottom"><img src="images/empty.png" alt="RHS panel image"></div>
+                
+                <div class="side-bg left top hide"><img src="images/empty.png" alt="slideshow"></div>
+                <div class="side-bg left bottom"><img src="images/empty.png" alt="LHS panel image"></div>
+                
+                <div id="slideshow" style="display: none">
+                    <script>
+                        writeFile("slideshow-images.html");
+                        startSideSlider();
+                    </script>
+                </div>
+                <!-- End Side slideshow section -->
+                
+                <div class="page-heading">
+                    <h1>Product Search</h1>
+                </div>
+                <div style="border-top: 1px solid #109343; margin: 14px 0 12px 0;">
+                </div>
+                
+                <div class="main-category-container">
+                    <a href="product-search/interior/inx2-search-interior.html">
+                        <div class="main-box">
+                            <div>
+                                <img src="images/product-search/interior-img/MoltoLuce-NinaXL-search.jpg">
+                                <img src="images/product-search/interior-img/Metalumen-Carlisle-search.jpg">
+                                <img src="images/product-search/interior-img/Bruck-Shopstar-search.jpg">
+                                <img src="images/product-search/interior-img/SPI-Lightruss-search.jpg">
+                            </div>
+                        </div>
+                        <div class="main-category-titles">
+                            Interior
+                        </div>
+                    </a>
+                    <a href="product-search/interior/inx2-search-exterior.html">
+                        <div class="main-box">
+                            <div>
+                                <img src="images/product-search/exterior-img/WAC-InvisiLED-Palette-search.jpg">
+                                <img src="images/product-search/exterior-img/VLT-Titano-search.jpg">
+                                <img src="images/product-search/exterior-img/VLT-Sunny-search.jpg">
+                                <img src="images/product-search/exterior-img/Rebelle-Cyl-search.jpg">
+                            </div>
+                        </div>
+                        <div class="main-category-titles">
+                            Exterior
+                        </div>
+                    </a>
+                </div>  
+                <div style="clear: both;">
+                </div>
+            </div>
+            <div style="border-top: 1px solid #109343; margin: 20px 0 12px 0;">
+            </div>
+            <div id="footer-bg">
+                <div class="content">
+                    <div>
+                    <script>writeFile("global_html/brand-table.html")</script>
+                    </div>
+                </div>
+                <div class="content">
+                    <script>writeFile("global_html/socialmedia.html")</script>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #109343; margin: 12px 0 30px 0;">
+            </div>
+        </div>
+    </div>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script>
+    var sc_project=9144760; 
+    var sc_invisible=1; 
+    var sc_security="f2b71a03"; 
+    var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+    document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="web analytics"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/9144760/0/f2b71a03/1/" alt="web
+    analytics"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>
