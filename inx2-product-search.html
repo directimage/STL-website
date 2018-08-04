@@ -46,30 +46,27 @@
                 </div>
                 <!-- End Side slideshow section -->
                 
-                <div class="page-heading">
-                    <h1>Product Search</h1>
-                </div>
-                <div style="border-top: 1px solid #109343; margin: 14px 0 12px 0;">
-                </div>
-                
-                <div id="category-container"></div>
+                <div id="categories-container"></div>
                 <script>
+                    var defaultPage = 'main-categories';
+                    var containerID = 'categories-container';
+                
                     function getTarget() {
                         var target = decodeURIComponent((new RegExp('[?|&]target=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
-                        return target ? target : 'main-categories';
+                        return target ? target : defaultPage;
                     }
                     
-                    function openPage(target, url) {
+                    function openPage(target) {
                         window.history.pushState(null, null, `?target=${target}`);
-                        writeFileToRemoteTarget(url, 'category-container');
+                        writeFileToRemoteTarget(`product-search/${target}.html`, containerID);
                     }
                     
                     window.addEventListener('popstate', function() {
-                        writeFileToRemoteTarget(`product-search/${getTarget()}.html`, 'category-container');
+                        writeFileToRemoteTarget(`product-search/${getTarget()}.html`, containerID);
                     })
                     
                     var initialTarget = getTarget();
-                    openPage(initialTarget, `product-search/${initialTarget}.html`);
+                    openPage(initialTarget);
                 </script>
                 
                 <div style="clear: both;">
