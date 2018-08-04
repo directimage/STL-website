@@ -52,34 +52,26 @@
                 <div style="border-top: 1px solid #109343; margin: 14px 0 12px 0;">
                 </div>
                 
-                <div class="main-category-container">
-                    <a href="product-search/interior/inx2-search-interior.html">
-                        <div class="main-box">
-                            <div>
-                                <img src="images/product-search/interior-img/MoltoLuce-NinaXL-search.jpg">
-                                <img src="images/product-search/interior-img/Metalumen-Carlisle-search.jpg">
-                                <img src="images/product-search/interior-img/Bruck-Shopstar-search.jpg">
-                                <img src="images/product-search/interior-img/SPI-Lightruss-search.jpg">
-                            </div>
-                        </div>
-                        <div class="main-category-titles">
-                            Interior
-                        </div>
-                    </a>
-                    <a href="product-search/interior/inx2-search-exterior.html">
-                        <div class="main-box">
-                            <div>
-                                <img src="images/product-search/exterior-img/WAC-InvisiLED-Palette-search.jpg">
-                                <img src="images/product-search/exterior-img/VLT-Titano-search.jpg">
-                                <img src="images/product-search/exterior-img/VLT-Sunny-search.jpg">
-                                <img src="images/product-search/exterior-img/Rebelle-Cyl-search.jpg">
-                            </div>
-                        </div>
-                        <div class="main-category-titles">
-                            Exterior
-                        </div>
-                    </a>
-                </div>  
+                <div id="category-container"></div>
+                <script>
+                    function getTarget() {
+                        var target = decodeURIComponent((new RegExp('[?|&]target=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+                        return target ? target : 'main-categories';
+                    }
+                    
+                    function openPage(target, url) {
+                        window.history.pushState(null, null, `?target=${target}`);
+                        writeFileToRemoteTarget(url, 'category-container');
+                    }
+                    
+                    window.addEventListener('popstate', function() {
+                        writeFileToRemoteTarget(`product-search/${getTarget()}.html`, 'category-container');
+                    })
+                    
+                    var initialTarget = getTarget();
+                    openPage(initialTarget, `product-search/${initialTarget}.html`);
+                </script>
+                
                 <div style="clear: both;">
                 </div>
             </div>
