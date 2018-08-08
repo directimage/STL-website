@@ -763,8 +763,10 @@ a[href^="tel:"] {
     color: #109343;
     text-align: center;
 }
-.search-result {
-    
+.click-for-more {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    color: #109343;
 }
 .logo-result {
     float: left;
@@ -792,6 +794,9 @@ a[href^="tel:"] {
     height: 70px;
     margin: 10px 0;
     margin-right: 18px;
+}
+.senso-spacing img{
+    margin-right: 16px;
 }
 .product-result img:last-of-type{
     margin-right: 0px;
