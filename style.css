@@ -795,11 +795,20 @@ a[href^="tel:"] {
     margin: 10px 0;
     margin-right: 18px;
 }
-.senso-spacing img{
+.tight-spacing img{
     margin-right: 16px;
+}
+.tighter-spacing img{
+    margin-right: 14px;
+}
+.tightest-spacing img{
+    margin-right: 12px;
 }
 .product-result img:last-of-type{
     margin-right: 0px;
+}
+.topborder a:first-of-type > div{
+    border-top: 2px solid #e0e0df;
 }
 /* Product Videos Page --see movie-popup CSS file--
 =================================================================================================== */
