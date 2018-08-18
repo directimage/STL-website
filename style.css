@@ -804,6 +804,12 @@ a[href^="tel:"] {
 .tightest-spacing img{
     margin-right: 12px;
 }
+.tightest-spacing2 img{
+    margin-right: 6px;
+}
+.minimum-spacing img{
+    margin-right: -1px;
+}
 .product-result img:last-of-type{
     margin-right: 0px;
 }
