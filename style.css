@@ -791,23 +791,34 @@ a[href^="tel:"] {
     border-top: 0;
 }
 .product-result img{
-    height: 70px;
+    max-height: 70px;
     margin: 10px 0;
     margin-right: 18px;
 }
-.tight-spacing img{
+.product-result div{
+    width:80px;
+    float: left;
+    margin-top: 16px;
+}
+.tight-spacing1 img{
     margin-right: 16px;
 }
-.tighter-spacing img{
+.tight-spacing2 img{
     margin-right: 14px;
 }
-.tightest-spacing img{
+.tight-spacing3 img{
     margin-right: 12px;
 }
-.tightest-spacing2 img{
+.tight-spacing33 img{
+    margin-right: 9px;
+}
+.tight-spacing4 img{
     margin-right: 6px;
 }
-.minimum-spacing img{
+.tight-spacing5 img{
+    margin-right: 2px;
+}
+.tight-spacing6 img{
     margin-right: -1px;
 }
 .product-result img:last-of-type{
