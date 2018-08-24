@@ -791,7 +791,7 @@ a[href^="tel:"] {
     border-top: 0;
 }
 .product-result img{
-    max-height: 70px;
+    height: 70px;
     margin: 10px 0;
     margin-right: 18px;
 }
