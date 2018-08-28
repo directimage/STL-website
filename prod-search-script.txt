@@ -1,0 +1,22 @@
+
+                <script>
+                    var defaultPage = 'main-categories';
+                    var containerID = 'categories-container';
+                
+                    function getTarget() {
+                        var target = decodeURIComponent((new RegExp('[?|&]target=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+                        return target ? target : defaultPage;
+                    }
+                    
+                    function openPage(target) {
+                        window.history.pushState(null, null, `?target=${target}`);
+                        writeFileToRemoteTarget(`product-search/${target}.html`, containerID);
+                    }
+                    
+                    window.addEventListener('popstate', function() {
+                        writeFileToRemoteTarget(`product-search/${getTarget()}.html`, containerID);
+                    })
+                    
+                    var initialTarget = getTarget();
+                    openPage(initialTarget);
+                </script>

@@ -57,12 +57,12 @@
                     }
                     
                     function openPage(target) {
-                        window.history.pushState(null, null, `?target=${target}`);
-                        writeFileToRemoteTarget(`product-search/${target}.html`, containerID);
+                        window.history.pushState(null, null, '?target=' + target);
+                        writeFileToRemoteTarget('product-search/' + getTarget() + '.html', containerID);
                     }
                     
                     window.addEventListener('popstate', function() {
-                        writeFileToRemoteTarget(`product-search/${getTarget()}.html`, containerID);
+                        writeFileToRemoteTarget('product-search/' + getTarget() + '.html', containerID);
                     })
                     
                     var initialTarget = getTarget();
