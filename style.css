@@ -796,7 +796,7 @@ a[href^="tel:"] {
     margin-right: 18px;
 }
 .product-result div{
-    width:80px;
+    padding-right: 17px;
     float: left;
     margin-top: 16px;
 }
