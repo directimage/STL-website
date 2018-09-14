@@ -736,27 +736,26 @@ a[href^="tel:"] {
     text-align: center;
     margin-top: 18px;
 }
-.interior-category-container{
+.category-container{
     width: 219px;
     height: 253px;
     margin-top: 10px;
     margin-right: 20px;
     text-align: center;
     float: left;
-}.interior-category-container{
     cursor: pointer;
 }
-.interior-row-control div:nth-child(4n+4) {
+.row-control div:nth-child(4n+4) {
     margin-right: 0;
 }
-.interior-category {
+.category {
     box-sizing: border-box;
     border: solid 1px #888888;
     width: 219px;
     height: 219px;
     padding: 3px;
 }
-.interior-category-titles {
+.category-titles {
     line-height: 34px;
     font-size: 24px;
     font-family: STLGothic, 'Century Gothic', Arial, sans-serif;
