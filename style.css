@@ -799,6 +799,12 @@ a[href^="tel:"] {
     float: left;
     margin-top: 16px;
 }
+.product-result img:last-of-type{
+    margin-right: 0px;
+}
+.topborder a:first-of-type > div{
+    border-top: 2px solid #e0e0df;
+}
 .tight-spacing1 img{
     margin-right: 16px;
 }
@@ -840,12 +846,6 @@ a[href^="tel:"] {
 }
 .extratight5 {
     margin-right: -5px !important;
-}
-.product-result img:last-of-type{
-    margin-right: 0px;
-}
-.topborder a:first-of-type > div{
-    border-top: 2px solid #e0e0df;
 }
 /* Product Videos Page --see movie-popup CSS file--
 =================================================================================================== */
