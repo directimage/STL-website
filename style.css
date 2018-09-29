@@ -423,15 +423,16 @@ a[href^="tel:"] {
     font-size: 17px;
     line-height: 23px;
     color: #000;
-    padding: 11px 0px 8px 0px;
+    padding: 11px 0px 6px 0px;
 }
 .new-brands div {
     margin: 0 auto;
-    padding-top: 11px;
+    padding-top: 2px;
+    padding-bottom: 3px;
     text-align: center;
 }
 .new-brands img {
-    max-height: 90px;
+    max-height: 107px;
     max-width: 220px;
 }
 .news-item {
@@ -444,6 +445,7 @@ a[href^="tel:"] {
 .news-item span{
     font-weight: bold;
 }
+
 
 /* popups...*/
 #current-issues{
