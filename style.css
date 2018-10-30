@@ -1189,13 +1189,13 @@ highslide>img tag*/
 .np-images {
     display: inline-block;
     float:left;
-    padding: 12px 4px 12px 12px;
+    padding: 12px 0px 12px 12px;
 }
 .np-images img{
     max-height: 164px;
 }
 .np-text{
-    width: 439px; 
+    width: 450px; 
     display:inline-block; 
     float: left;
 }
