@@ -107,7 +107,7 @@ a[href^="tel:"] {
 .content{
     position: relative;
     display: block;
-    width: 1150px;
+    width: 1250px;
     margin: 0 auto;
 }
 
@@ -221,7 +221,7 @@ a[href^="tel:"] {
 .side-bg {
     position: absolute;
     background: white;
-    height: 680px;
+    height: 800px;
     width: 1436px;
 }
 
@@ -336,8 +336,9 @@ a[href^="tel:"] {
     float: left;
 }
 .slide {
-    width: 1150px;
-    height: 680px;
+    object-fit: cover;
+    width: 1250px;
+    height: 800px;
     white-space: nowrap;
     overflow: hidden;
 }
